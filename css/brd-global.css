@@ -1,0 +1,641 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*---------------------- Global Styles --------------------*/
+
+* {
+	margin:0px;
+	padding:0px;
+	font-family: Verdana, Geneva, sans-serif;
+	text-decoration: none;
+	outline: none;
+}
+
+body {
+	height: 100%;
+	/*overflow-y: auto;*/
+}
+
+html {
+	height: 100%;
+}
+
+h1 {
+	font-size: 19px;
+	color: #009DE1;
+	font-family: "Georgia", "Times New Roman", Times, serif;
+	padding-bottom: 15px;
+}
+
+h2 {
+	font-size: 14px;
+	padding-bottom: 10px;
+}
+
+h3 {
+	font-size: 16px;
+	color: #414042;
+	font-weight: normal;
+	font-family: "Georgia", "Times New Roman", Times, serif;
+}
+
+h4 {
+}
+
+h5 {
+}
+
+h6 {
+}
+
+em {
+}
+
+span {
+	display: block;
+	text-indent: -9999px;
+}
+
+p {
+	font-size: 11px;
+	padding-bottom: 20px;
+	line-height: 15px;
+}
+
+a:link {
+	color: #009DE1;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+
+a:active {
+}
+
+ol {
+	list-style: none;
+}
+
+ol li {
+	display: block;
+	float: left;
+}
+
+ul {
+	list-style: none;
+}
+
+li {
+}
+
+label {
+}
+
+img {
+}
+
+table {
+	margin-right: 40px;
+	border-collapse: collapse;
+}
+
+tr {
+	border-bottom: 1px solid #000;
+}
+
+th {
+	font-size: 10px;
+	font-weight: bold;
+	text-align: left;
+	padding: 0 0 5px 0;
+}
+
+td {
+	font-size: 10px;
+	padding: 10px 5px;
+	border-bottom: 1px solid #000;
+}
+
+table.large {
+	border-collapse: collapse;
+	margin-right: 0px;
+}
+
+table.large tr {
+	border-bottom: 1px solid #000;
+}
+
+table.large th {
+	font-size: 14px;
+	font-weight: bold;
+	text-align: left;
+	padding: 0 0 5px 0;
+	border-bottom: 1px solid #000;
+}
+
+table.large td {
+	font-size: 12px;
+	padding: 10px 5px;
+	border-bottom: 1px solid #000;
+	vertical-align:top;
+}
+
+table.large td p{
+	font-size: 12px;
+	margin-right: 0px;
+}
+
+table.large td.spanHeading{
+	font-size: 14px;
+	font-style: italic;
+}
+
+
+div.sub {
+	width: 950px;
+	margin-left: auto;
+	margin-right: auto;
+	min-height: 100%;
+	height: 800px;
+	height: auto;
+	margin: 0 auto -270px;
+}
+div.sub1{
+	width: 750px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#container {
+	/*position: relative;*/
+	min-height: 100%;
+	height: 100%;
+
+}
+
+
+/*--------------------------------------------------------- HEADER */
+
+div.header {
+	border-bottom: 5px solid #22a7e0;
+	background-image: url(../images/brd-logo.jpg);
+	background-position: 32px 40px;
+	background-repeat: no-repeat;
+	padding-top: 30px;
+	overflow-y: auto;
+}
+
+h1#logo {
+	float: left;
+}
+
+h1#logo span a {
+	display: block;
+	width: 180px;
+	height: 60px;
+	margin-left: 20px;
+}
+
+div.right {
+	overflow-y: auto;
+	float: right;
+}
+
+div.left {
+	width: 200px;
+	float: left;
+}
+
+/*------------------------------------ Search */
+
+div#searchbox {
+	float: right;
+	margin-right: 45px;
+}
+
+div#searchbox input {
+	display: inline !important;
+}
+
+div#searchbox form {
+}
+
+div#searchbox form input.box {
+	border: 1px solid #009DE1;
+	margin-top: 5px;
+	margin-right: 5px;
+	float: left;
+}
+
+div#searchbox form input.button {
+	display: block;
+	background-image: url(../images/searchMagnifingGlass.jpg);
+	background-position: left top; 
+	background-repeat: no-repeat;
+	background-color: #fff;
+	width: 29px;
+	height:29px;
+	text-indent: -9999px;
+	border: none;
+}
+
+div#searchbox form input.button:hover {
+	cursor: pointer;
+}
+
+/*---------------------------------------- Top Links */
+
+
+ol#topLinks {
+	display: block;
+	float: right;
+	margin-right: 15px;
+	margin-top: 16px;
+	background-image: url(../images/linkShadow.jpg);
+	background-position: left top;
+	background-repeat: no-repeat;
+	padding-left: 19px;
+	clear: right;
+}
+
+ol#topLinks li a {
+	display: block;
+	background-image: url(../images/linkBG-off.jpg);
+	background-position: left top;
+	background-repeat: repeat-x;
+	background-color: #6e6e6e;
+	height: 16px;
+	margin-right: 1px;
+	padding: 10px 9px;
+	text-align: center;
+	font-size: 11px;
+	font-weight: bold;
+	color: #fff;
+}
+
+ol#topLinks li a:hover {
+	background-position: left bottom;
+	background-color: #22a7e0;
+	text-decoration: none;
+}
+
+ol#topLinks li a.current {
+	background-image: url(../images/linkBG-on.jpg);
+	background-color: #22a7e0;
+}
+
+
+/*--------------------------------------------------------- HOMEPAGE */
+
+div.banner {
+	background-image: url(../images/hpBanner_950px.jpg);
+	background-position: left top;
+	background-repeat: no-repeat;
+	width: 950px;
+	height: 205px;
+}
+
+div.banner p {
+	display: block;
+	text-indent: -9999px;
+}
+
+div.home {
+	padding: 20px 30px;
+}
+
+
+
+/*--------------------------------------------------------- CONTENT */
+
+div.content {
+	background-image: url(../images/upperShadow.jpg);
+	background-position: left top;
+	background-repeat: repeat-x;
+	padding-top: 20px;
+	overflow-y: auto;
+}
+
+
+
+/*------------------------------------------ Left Column */
+
+div.leftColumn {
+	width: 150px;
+	float: left;
+	margin: 12px 25px 20px 0;
+}
+
+div.leftColumn ul {
+}
+
+div.leftColumn ul ul{
+	padding-left: 8px;
+}
+
+div.leftColumn ul li.menu_head {
+	display: block;
+	background-image: url(../images/leftLinkBG.jpg);
+	background-position: right top;
+	background-repeat: repeat-y;
+	padding: 10px 5px;
+	margin-bottom: 1px;
+	color: #414042;
+	font-size: 10px;
+	font-weight: bold;
+}
+
+div.leftColumn ul li.menu_head:hover {
+	color: #009DE1;
+	background: none;
+	cursor: pointer;
+}
+
+div.leftColumn ul li.menu_head.current {
+	color: #009DE1;
+	background: none;
+}
+
+div.leftColumn ul li a {
+	display: block;
+	background-image: url(../images/leftLinkBG.jpg);
+	background-position: right top;
+	background-repeat: repeat-y;
+	padding: 10px 5px;
+	margin-bottom: 1px;
+	color: #414042;
+	font-size: 10px;
+	font-weight: bold;
+}
+
+div.leftColumn ul li a:hover {
+	color: #009DE1;
+	background: none;
+}
+
+div.leftColumn ul li.current {
+	color: #009DE1;
+	background: none;
+}
+
+div.leftColumn ul li a.current {
+	color: #009DE1;
+	background: none;
+}
+
+div.leftColumn ul.menu_body li a {
+	background-image: none;
+	padding-left: 20px;
+}
+
+.menu_head {
+	position: relative;
+}
+
+.menu_body {
+	display: none;
+}
+
+
+/*------------------------------------------ middle Column */
+
+div.middleColumn {
+	float: left;
+	width: 730px;
+	/*background-image: url(../images/rightLinkBG.jpg);
+	background-position: right top;
+	background-repeat: repeat-y;*/
+	display: block;
+	padding-right: 40px;
+}
+
+div.middleColumn h1 {
+	display: block;
+	/*background-image: url(../images/rightShadowtop.jpg);
+	background-position: right top;
+	background-repeat: no-repeat;*/
+	width: 650px;
+}
+
+div.middleColumn p {
+	margin-right: 40px;
+}
+
+div.middleColumn div.bottom {
+	/*background-image: url(../images/rightShadowbottom.jpg);
+	background-position: right top;
+	background-repeat: no-repeat;*/
+	width: 650px;
+	height: 41px;
+}
+
+div.middleColumn ul {
+	list-style: square;
+	padding-left: 20px;
+	padding-bottom: 20px;
+}
+
+div.middleColumn ul li {
+	font-size: 11px;
+	line-height: 15px;
+	padding-bottom: 10px;
+}
+
+div.middleColumn ul li ul {
+	list-style: disc;
+	padding-bottom: 0;
+}
+
+div.middleColumn ul li ul li {
+	padding-bottom: 5px;
+}
+
+
+
+/*------------------------------------------ Right Column */
+
+div.rightColumn {
+	overflow-y: auto;
+	padding-right: 10px;
+}
+
+div.rightColumn h3 {
+	padding: 5px 0 5px 5px;
+	border-bottom: 1px solid #000;
+	margin-bottom: 10px;
+}
+
+div.rightColumn ul {
+}
+
+div.rightColumn ul li {
+	padding-bottom: 10px;
+}
+
+div.rightColumn ul li a {
+	display: block;
+	background-image: url(../images/arrowGrey.gif);
+	background-position: left top;
+	background-repeat: no-repeat;
+	padding-left: 10px;
+	color: #414042;
+	font-size: 10px;
+}
+
+div.rightColumn ul li a:hover {
+	color: #009DE1;
+	background-image: url(../images/arrowBlue.gif);
+}
+
+
+
+/*--------------------------------------------------------- FOOTER */
+
+
+div.footer {
+	background-image: url(../images/grass.jpg);
+	background-position: left bottom;
+	background-repeat: repeat-x;
+	height: 270px;
+	width: 100%;
+	overflow-y: auto;
+}
+
+div.footer p {
+	text-align: center;
+	color: #666666;
+}
+
+div.footer div#icon {
+	width: 100%;
+	overflow: hidden;
+}
+
+div.footer ol {
+	position: relative;
+	float: left;
+	left: 50%;
+	z-index:100;
+}
+
+div.footer ol li {
+	padding-left: 10px;
+	padding-right: 10px;
+	position: relative;
+	float: left;
+	right: 50%;
+}
+
+div.footer ol li a {
+	display: block;
+	width: 50px;
+	height: 50px;
+	background-position: left top;
+	background-repeat: no-repeat;
+	text-indent: -9999px;
+}
+
+a#ostp {
+	background-image: url(../images/OSTP.png);
+}
+
+a#epa {
+	background-image: url(../images/Environmental_Protection_Agency_logo.png);
+}
+
+a#doe {
+	background-image: url(../images/doeLogo.png);
+}
+
+a#nsf {
+	background-image: url(../images/NSF_logo.png);
+}
+
+a#usda {
+	background-image: url(../images/USDA-Logo-small.jpg);
+	margin-top: 7px;
+}
+
+a#usdi {
+	background-image: url(../images/US-DeptOfTheInterior-Seal.png);
+}
+
+a#dot {
+	background-image: url(../images/dotLogo.png);
+}
+
+a#dod {
+	background-image: url(../images/dodSeal.png);
+}
+
+
+div.footer ul {
+	overflow-y: auto;
+	padding-top: 60px;
+	float: right;
+	left:-30%;
+	position: relative;
+	z-index:99;
+}
+
+div.footer ul li {
+	display: block;
+	float: left;
+}
+
+div.footer p a {
+	font-size: 9px;
+	color: #666666;
+}
+
+div.footer p a:hover {
+	color: #0f516d;
+}
+
+div.footer p a.border {
+	padding-left: 10px;
+	margin-left: 10px;
+	border-left: 1px solid #666666;
+}
+
+div.footer p.end{
+	position:relative;
+	float:right;
+	font-size: 7pt;
+	left: 20px;
+	padding-top: 25px
+}
+
+div.push {
+height: 270px; 
+}
+
+.hide {
+display: none;
+}
+
+span.reddot
+{
+ font-size : 8pt;
+ font-family : Verdana, Arial, Helvetica;
+ font-weight : normal;
+ color : red;
+ margin-top: 5px;
+ margin-bottom: 0;
+ display: inline;
+ text-indent: 0px;
+}
+/*------------------------------------------------Breadcrumbs*/
+
+#breadcrumb
+{
+	font-size : .7em;
+	margin-bottom:15px;
+}
+
+#breadcrumb a:link {color:#009DE1;}      /* unvisited link */
+#breadcrumb a:visited {color:#009DE1;}  /* visited link */
+#breadcrumb a:hover {color:#009DE1; text-decoration:underline;}  /* mouse over link */
+#breadcrumb a:active {color:#009DE1;}  /* selected link */
+
